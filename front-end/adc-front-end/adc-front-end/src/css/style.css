@@ -8,25 +8,11 @@ object-fit:contain;
 }
 .reg-col {
     
-    padding-top: 0;
        background-color:dodgerblue;  
-       height: 480px;
-       margin-top: 50px;
-      margin-left:8%;
-       
-   }
+  
+          }
 
-.text-center {
-    height: 480px;
-    margin-top: 50px;
-   width: 900px;
-     
-}
-.position-form {
-    max-width: 900px;
-    margin-left: 85px;
-    
-}
+
 
 
 
@@ -39,13 +25,12 @@ object-fit:contain;
 
 .third {
     
-    margin-top: 120px;
+    margin-top: 140px;
     margin-left: 50px;
 }
 button.push {
-    margin-top: 3% !important;
-    width: 40%;
-margin-left: 200px;
+    width: 50%;
+
 
 
 }
