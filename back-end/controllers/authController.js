@@ -89,7 +89,9 @@ exports.forgotPassword = async (req, res) => {
         const user = await User.findOne({ email });
         if (!user) {
             return res.status(404).json({ error: 'Utilisateur non trouvé' });
-        }
+        }      
+          // Générer un token de réinitialisation
+
 
         // Générer un token de réinitialisation
         const resetToken = crypto.randomBytes(20).toString('hex');
