@@ -22,6 +22,8 @@ function Login() {
             });
             console.log(response.data);
  // Navigate to profile page on success
+  // Navigate to profile page on success
+
  navigate('/profile');
             
  // Optionally reload the page
