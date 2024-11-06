@@ -53,13 +53,14 @@ function Register() {
 
     return (
         <>
-<div className='container-fluid '>
+<div className='container '>
 <div className='row'>
     <div className='col-lg-3 col-sm-12 reg-col' >
 <img src={registerImage} className='imgReg' alt=''></img>
     </div>
-    <div className='col-lg-9 col-sm-12 text-center bg-primary-subtle' >
-        <form onSubmit={handleSubmit} className='row position-form'>
+    <div className='col-lg-9 col-sm-12 text-center bg-primary-subtle ps-5' >
+        <form onSubmit={handleSubmit} className='row position-form  ps-5'>
+        <h2 className='line me-5 pt-5'>Register</h2>
             <div className='col-lg-3 col-sm-12 first'>
                 <input
                     type="text"
@@ -87,8 +88,8 @@ function Register() {
                
             
     
-    <div className='col-lg-3 col-sm-12 ms-5 second'>
-    <h2 className='line mb-5 me-3'>Register</h2>
+    <div className='col-lg-3 col-sm-12 ms-2'>
+    
     <input
                     type="number"
                     placeholder="Number"
@@ -112,7 +113,7 @@ function Register() {
                 />
                
     </div>
-    <div className='col-lg-3 col-sm-12 third'>
+    <div className='col-lg-3 col-sm-12 third ms-2'>
     <input
                     type="text"
                     placeholder="Education"
@@ -133,17 +134,7 @@ function Register() {
  className='form-control mt-3'
      />
     </div>
-    <div className="form-check check-style">
-      <input className="form-check-input me-2" type="checkbox" value="" id="invalidCheck" required/>
-      <label className="form-check-label" htmtlfor="invalidCheck">
-        Agree to terms and conditions
-      </label>
-      <div className="invalid-feedback">
-        You must agree before submitting.
-        
-      </div>
-      
-    </div>
+   
     <button type="submit" className='mt-3 btn btn-primary push'>Register</button>
     </form>
     </div>
