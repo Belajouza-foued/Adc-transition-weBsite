@@ -49,46 +49,57 @@ function Profile() {
 
     return (
         //dash profile//
-        <div className="container profile-container col ">
-            <div className='row'>
+        <div className="container-fluid profile-container">
+            <div className='row  d-flex flex-lg-row flex-column align-items-center justify-content-center'>
           
-            {/* Intégration du tableau de bord */}
-            <div className=" col-lg-12 col-sm-12">
-             <h1 className='profile-position mt-5'>Profile</h1>
-      <button className=" btn btn-danger nav-item nav-log mb-5 ms-2">
+                      {/* Intégration du tableau de bord */}
+                      <h1 className='text-center  col-lg-12 '>Profile</h1>
+            <div className=" col-lg-12 col-sm-12 mb-3  d-flex justify-content-center pe-2 "> 
+            
+      <button className=" btn btn-danger nav-item nav-log">
                 <Link to={"/"} className="nav-link logout-link" onClick={logOut}>LogOut</Link>
              </button> 
 
       {/* Lien vers le tableau de bord */}
       <Link to="/dashboard">
-        <button className="btn btn-primary btn-dashboard mt-2 mb-5 ps-0 ms-3">Dashboard</button>
+        <button className="btn btn-primary btn-dashboard mt-2 ms-3">Dashboard</button>
       </Link>
     </div>
    
-               <div className='col-lg-6 col-sm-12'>
+               <div className='col-lg-6 col-sm-12  text-center mb-4  mt-2 pe-5'>
                     {userData.profileImage && ( // Afficher l'image de profil si elle existe
                         <img
                             src={`http://localhost:5000/uploads/${userData.profileImage}`} // Ajuste le chemin selon ton serveur
                             alt="Profile"
-                            className="img-profile ms-2"
+                            className="img-profile"
                        />
                     )} </div>
                     
-                     <div className="col-lg-6 col-sm-12 text-introduction bg-teritory">
-                        
-                      <form className='form-profile me-5'>
-                      <em className='description mb-2'> hello evry body you must believe<br>
-                      </br> everything is possible dont give up</em>
-              <h5 className="title-form mt-1">Username: {userData.username}</h5>
-              <p className="text-form mt-2 last-profile mt-1">Lastname: {userData.lastname}</p>
-                    <p className="text-form mt-1 ms-1">  <FontAwesomeIcon icon={faEnvelope} className="icon-profile" /> {userData.email}</p>
-                  <p className="text-form mt-1 ms-1"><FontAwesomeIcon icon={faPhoneVolume} className="icon-profile"/> {userData.number}</p>
-                    <p className="text-form mt-1 ms-1"><FontAwesomeIcon icon={faCertificate} className="icon-profile"/> {userData.status}</p>
-                    <p className="text-form mt-1 ms-2"><FontAwesomeIcon icon={faLocationDot} className="icon-profile"/>{userData.adress}</p>
-                   
-                 
-                    </form>
-            </div>
+                    <div className="col-12 col-lg-6">
+        <div className="bg-light ps-5 rounded ms-2 pt-3">
+          <em className="description d-block mb-3">
+            Hello everybody, you must believe<br /> everything is possible, don't give up.
+          </em>
+          <h5 className="title-form">Username: {userData.username}</h5>
+          <p className="text-form">Lastname: {userData.lastname}</p>
+          <p className="text-form">
+            <FontAwesomeIcon icon={faEnvelope} className="icon-profile me-2" />
+            {userData.email}
+          </p>
+          <p className="text-form">
+            <FontAwesomeIcon icon={faPhoneVolume} className="icon-profile me-2" />
+            {userData.number}
+          </p>
+          <p className="text-form">
+            <FontAwesomeIcon icon={faCertificate} className="icon-profile me-2" />
+            {userData.status}
+          </p>
+          <p className="text-form">
+            <FontAwesomeIcon icon={faLocationDot} className="icon-profile me-2" />
+            {userData.adress}
+          </p>
+        </div>
+      </div>
        
             
             </div>

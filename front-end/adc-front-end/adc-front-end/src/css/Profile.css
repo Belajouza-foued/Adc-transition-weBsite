@@ -1,12 +1,11 @@
 
 .img-profile {
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
+    width: 300px;
+  height: 350px;
+border-radius: 20px;
     max-width: 300px; /* Limite la taille maximale de l'image */
-    height: auto; /* Garde les proportions */
-    display: flex; 
-    justify-content: center;
+  
+    margin-top: 10px;
     object-fit: cover; /* Remplir l'image tout en conservant ses proportions */
     border: 1px solid dodgerblue; /* Ajoute une bordure autour de l'image */
     
@@ -15,24 +14,17 @@
         transform: scale(1.1); /* Zoom léger lors du survol */
         transition: transform 0.3s ease;
       }
-      .form-profile {
-      max-width: 350px;
-      max-height:350px;
-      
-    }
+    
     .title-form {
         font-size:25px;
     }
     em {
         margin-top: 10px;
     }
-    .last-profile {
-        font-size: 25px;
-        font-weight:500;
-    }
+  
     
     .text-form {
-        margin-top: 50px;
+    
     }
     .icon-profile {
         margin-right: 10px;
@@ -72,18 +64,19 @@
        
         
         .nav-log {
-            width: 20%;
+            width: 100px;
             
             background-color: red; /* Couleur de fond rouge pour le bouton */
             color: white; /* Couleur du texte en blanc */
             border: none; /* Retirer la bordure du bouton, si nécessaire */
                margin-top: 10px;
+              
                
         }
         .btn-dashboard {
-            width: 20%;
-            
+            width: 100px;
         
+                
         }
         
     
@@ -95,14 +88,12 @@
         margin-right: 20px;
         justify-content: space-between;
        }
-        .table-profil {
-    width: 900px;
-    
-    max-width: 900px;
-    padding:0;
-    margin: 0;
-    border-collapse: collapse; /* Enlève l'espacement entre les cellules */
-        }
+  .rounded {
+    width: 300px;
+    height: 350px;
+   
+   
+  }
     
              
          
