@@ -71,3 +71,9 @@
        }
    
    }
+   @media (max-width: 576px) {
+    .link-register {
+        margin-left: 0 !important; /* Enlève les marges sur petit écran */
+        text-align: center; /* Centre le texte sur petit écran */
+    }
+}

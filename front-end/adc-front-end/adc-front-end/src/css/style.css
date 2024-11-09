@@ -12,28 +12,15 @@ object-fit:contain;
   
           }
 
-.second {
-    margin-top: 50px;
-}
-
-
-button.push {
+      
+.push {
     width: 50%;
-
-
-
-}
-.form-check {
-    display: flex;
-justify-content: center;
-margin-top: 5%;
-margin-right: 3% !important;
-
 }
 
-.form-check-label {
-    margin-right: 65px;
-}
+
+
+
+
 .line {
     color: dodgerblue;
     text-align: center;

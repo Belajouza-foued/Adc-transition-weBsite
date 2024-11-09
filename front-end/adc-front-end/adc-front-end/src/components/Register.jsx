@@ -58,10 +58,13 @@ function Register() {
     <div className='col-lg-3 col-sm-12 reg-col' >
 <img src={registerImage} className='imgReg' alt=''></img>
     </div>
-    <div className='col-lg-9 col-sm-12 text-center bg-primary-subtle ps-5' >
-        <form onSubmit={handleSubmit} className='row position-form  ps-5'>
-        <h2 className='line me-5 pt-5'>Register</h2>
-            <div className='col-lg-3 col-sm-12 first'>
+    <div className='col-lg-9 col-sm-12 text-center bg-primary-subtle ps-5 pe-5 pb-5' >
+    <div className='col-12'>
+             
+        <form onSubmit={handleSubmit} className='row position-form mt-2'>
+            
+        <h2 className='line pt-4'>Register</h2>
+            <div className='col-lg-4 col-sm-12'>
                 <input
                     type="text"
                     placeholder="Username"
@@ -69,26 +72,8 @@ function Register() {
                     onChange={(e) => setUsername(e.target.value)}
                     className='form-control mt-3'
                 />
-                <input
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                     className='form-control mt-3'
-                />
-                  <input
-                    type="lastname"
-                    placeholder="Lastname"
-                    value={lastname}
-                    onChange={(e) => setLastname(e.target.value)}
-                     className='form-control mt-3'
-                />
-                </div>
-               
-               
-            
-    
-    <div className='col-lg-3 col-sm-12 ms-2'>
+                  </div>
+                  <div className='col-lg-4 col-sm-12'>
     
     <input
                     type="number"
@@ -97,23 +82,34 @@ function Register() {
                     onChange={(e) => setNumber(e.target.value)}
                     className='form-control mt-3'
                 />
+                 </div>
+                  <div className='col-lg-4 col-sm-12'>
                 <input
-                    type="email"
-                    placeholder="Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                      className='form-control mt-3'
                 />
-                <input
-                    type="status"
-                    placeholder="Status"
-                    value={status}
-                    onChange={(e) => setStatus(e.target.value)}
-                     className='form-control mt-3'
-                />
+               </div>
+           
+              
                
-    </div>
-    <div className='col-lg-3 col-sm-12 third ms-2'>
+               
+            
+    
+   
+                 <div className='col-lg-4 col-sm-12'>
+                  <input
+                    type="lastname"
+                    placeholder="Lastname"
+                    value={lastname}
+                    onChange={(e) => setLastname(e.target.value)}
+                     className='form-control mt-3'
+                />
+                </div>
+              
+                <div className='col-lg-4 col-sm-12'>
     <input
                     type="text"
                     placeholder="Education"
@@ -121,6 +117,28 @@ function Register() {
                     onChange={(e) => setEducation(e.target.value)}
                     className='form-control mt-3'
                 />
+                </div>
+                <div className='col-lg-4 col-sm-12'>
+                <input
+                    type="status"
+                    placeholder="Status"
+                    value={status}
+                    onChange={(e) => setStatus(e.target.value)}
+                     className='form-control mt-3'
+                />
+               </div>
+               <div className='col-lg-8 col-sm-12'>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                     className='form-control mt-3'
+                />
+                </div>
+    
+   
+                <div className='col-lg-4 col-sm-12'>
                   <input
                     type="text"
                     placeholder="Adress"
@@ -128,15 +146,20 @@ function Register() {
                     onChange={(e) => setAdress(e.target.value)}
                     className='form-control mt-3'
                 />
+                </div>
+                <div className='col-lg-12 col-sm-12'>
  <input
         type="file"
  onChange={(e) => setProfileImage(e.target.files[0])}
  className='form-control mt-3'
      />
     </div>
-   
-    <button type="submit" className='mt-3 btn btn-primary push'>Register</button>
+    <div className='col-lg-12 col-sm-12 text-center push-register pt-4 mt-2'>
+    <button type="submit" className=' btn btn-primary push'>Register</button>
+    </div>
     </form>
+    </div>
+
     </div>
 </div>
 

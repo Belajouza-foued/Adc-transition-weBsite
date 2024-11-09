@@ -59,14 +59,17 @@ function Login() {
                     type="password"
                     placeholder='password'
                      value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}z
                     className='form-control mt-5'                    
                 />
                         </div>
-                        <div className="form-check col-lg-8 col-sm-12 pb-3 ms-4">
-                           <Link to={'/register'} className='link-register ms-5'> Create New Account</Link>
-                          <Link to={'/forgot-password'} className='link-register ms-5'>Forgot password</Link>
-                        </div>
+                        <div className="form-check col-lg-8 col-sm-12 ms-5 pt-3 d-flex justify-content-center mb-4">
+    <Link to={'/register'} className='link-register me-5'>Create New Account</Link>
+    <Link to={'/forgot-password'} className='link-register ms-2'>Forgot password</Link>
+</div>
+
+
+
                         <div className='col-lg-8 col-sm-12 pb-5  button-login pe-5'>
                         <button type="submit" className='btn 
                         btn-primary
