@@ -53,8 +53,8 @@ function Profile() {
             <div className='row  d-flex flex-lg-row flex-column align-items-center justify-content-center'>
           
                       {/* Intégration du tableau de bord */}
-                      <h1 className='text-center  col-lg-12 '>Profile</h1>
-            <div className=" col-lg-12 col-sm-12 mb-3  d-flex justify-content-center pe-2 "> 
+                      <h1 className='text-center title-profile col-lg-12 mt-5 pt-2 mt'>Profile</h1>
+            <div className=" col-lg-12 col-sm-12  d-flex justify-content-center ms-2 mb-5"> 
             
       <button className=" btn btn-danger nav-item nav-log">
                 <Link to={"/"} className="nav-link logout-link" onClick={logOut}>LogOut</Link>
@@ -75,8 +75,8 @@ function Profile() {
                        />
                     )} </div>
                     
-                    <div className="col-12 col-lg-6">
-        <div className="bg-light ps-5 rounded ms-2 pt-3">
+                    <div className="col-12 col-lg-6 ps-3">
+        <div className="bg-light  rounded  pt-3 text-center">
           <em className="description d-block mb-3">
             Hello everybody, you must believe<br /> everything is possible, don't give up.
           </em>

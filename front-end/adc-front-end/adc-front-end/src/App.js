@@ -3,18 +3,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Register from './components/Register';
 import Login from './components/Login';
 import Profile from "./components/Profile";
-import ForgotPassword from './components/ForgotPassword';
-import ResetPassword from './components/ResetPassword';
+
+import Dashboard from './components/Dashboard';
 function App() {
     return (
         <Router>
         <Routes>
        
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/forgot-password" element={<ForgotPassword/>} />
-            <Route path="/reset-password/:token" element={<ResetPassword/>} />
+            <Route index element={<Login />} />
+            <Route path="regiter" element={<Register />} />
+            <Route path="profile" element={<Profile />} />
+                   <Route path="dashboard" element={<Dashboard />} />
 
         </Routes>
     </Router>

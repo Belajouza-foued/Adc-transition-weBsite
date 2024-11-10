@@ -4,7 +4,7 @@
   height: 350px;
 border-radius: 20px;
     max-width: 300px; /* Limite la taille maximale de l'image */
-  
+  float: right;
     margin-top: 10px;
     object-fit: cover; /* Remplir l'image tout en conservant ses proportions */
     border: 1px solid dodgerblue; /* Ajoute une bordure autour de l'image */
@@ -35,7 +35,9 @@ border-radius: 20px;
         border-radius: 50%;
     }
     
-    
+    .title-profile {
+        color: dodgerblue;
+    }
      
         
         .jumbotron {
